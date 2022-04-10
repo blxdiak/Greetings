@@ -1,0 +1,25 @@
+local n = loadstring(game:HttpGet("https://raw.githubusercontent.com/blxdiak/Greetings/main/Notifications"))()
+
+getgenv().IrisAd = true;
+
+function Notify(title, description, duration)
+
+    n.Notify(
+        title,
+        description,
+        "rbxassetid://9335289723",
+        {
+            Duration = duration,
+            TitleSettings = {
+                TextXAlignment = Enum.TextXAlignment.Center,
+                Font = Enum.Font.SourceSansSemibold
+        },
+        GradientSettings = {
+        GradientEnabled = false,
+        SolidColorEnabled = true,
+        SolidColor = Color3.fromRGB(0, 32, 240),
+        Retract = true
+    
+    }})
+
+end
