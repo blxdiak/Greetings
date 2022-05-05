@@ -2,12 +2,12 @@ local n = loadstring(game:HttpGet("https://raw.githubusercontent.com/blxdiak/Gre
 
 getgenv().IrisAd = true;
 
-function Notify(title, description, duration)
+function Notify(title, description, duration, img)
 
     n.Notify(
         title,
         description,
-        "rbxassetid://9335289723",
+        "rbxassetid://"..img,
         {
             Duration = duration,
             TitleSettings = {
